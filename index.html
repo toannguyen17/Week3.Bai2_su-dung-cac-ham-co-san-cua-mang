@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2: Sử dụng các hàm có sẵn của mảng</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let string = '025468';
+		let arr    = string.split('');
+		let result = [];
+		arr.forEach(function(str, index){
+			if((string[index-1]%2 === 0)&&(string[index]%2 === 0)){
+			    result.push('-', str);
+			}else{
+			    result.push(str);
+			}
+		});
+		document.write(result.join(''));
+	</script>
+</body>
+</html>
